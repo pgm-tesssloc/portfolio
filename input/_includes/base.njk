@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page_title }}</title>
+
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <nav>
+        {% block nav %}
+            {% include "partials/nav.njk" %}
+        {% endblock nav %}
+    </nav>
+
+    <main>
+        {% block main %}
+            {{ content | safe }}
+        {% endblock main %}
+    </main>
+
+    <footer>
+        {% block footer %}
+            {% include "partials/footer.njk" %}
+        {% endblock footer %}
+    </footer>
+</body>
+</html>
