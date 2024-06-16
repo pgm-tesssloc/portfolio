@@ -1,0 +1,24 @@
+{% extends "hero.njk" %}
+
+{% import "components/general.njk" as c %}
+
+{% block content %}
+    <section>
+        <p>
+        {% block about %}
+            {{ content | safe}}
+        {% endblock about %}
+        </p>
+    </section>
+    <section>
+        {{c.list(contactTitle, contactIterator)}}
+        {% block column %}
+            {{ content | safe}}
+        {% endblock column %}
+    </section>
+    <section>
+        {% block projects %}
+            {{ content | safe}}
+        {% endblock projects %}
+    </section>
+{% endblock content %}

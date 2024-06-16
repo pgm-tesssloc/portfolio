@@ -3,3 +3,12 @@
         <img class="cover__image" src="/images/{{banner_src}}" alt="{{banner_alt}}">
     </div>
 {% endmacro %}
+
+{% macro list(title, iterator) %}
+    <div>
+        <h2>{{ title }}</h2>
+        {% for item in iterator %}
+            <li class="list__item">{{item.name}}</li>
+        {% endfor %}
+    </div>
+{% endmacro %}
