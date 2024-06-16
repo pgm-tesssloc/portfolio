@@ -4,6 +4,19 @@
     </div>
 {% endmacro %}
 
+{% macro linkList(title, iterator) %}
+    <div>
+        <h2>{{ title }}</h2>
+        {% for item in iterator %}
+            {% if item.link %}
+                <li class="listList__item"><a class="listLink__link" href="{{item.link}}">{{item.name}}</a></li>
+                {% else %}
+                <li class="list__item">{{item.name}}</li>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endmacro %}
+
 {% macro list(title, iterator) %}
     <div>
         <h2>{{ title }}</h2>
