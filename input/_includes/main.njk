@@ -12,9 +12,7 @@
     </section>
     <section>
         {{c.linkList(contactTitle, contactIterator)}}
-        {% block column %}
-            {{ content | safe}}
-        {% endblock column %}
+        {{c.list(techTitle, techIterator)}}
     </section>
     <section>
         {% block projects %}
