@@ -1,0 +1,18 @@
+{% extends "base.njk" %}
+
+{% import "components/general.njk" as c %}
+
+{% block main %}
+    <div class="hero">
+        <div class="hero__inner">
+            <p>Tess Slock</p>
+            <p>Quote</p>
+        </div>
+        {{c.banner(banner_src, banner_alt)}}
+    </div>
+    <div>
+        {% block content %}
+        {{ content | safe}}
+        {% endblock content %}
+    </div>
+{% endblock main %}
