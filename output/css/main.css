@@ -1,3 +1,9 @@
+:root {
+    --dark-green: #355834;
+    --light-green: #9DBF9E;
+    --white: white;
+}
+
 body {
     max-width: 80rem;
     width: 100%;
@@ -5,12 +11,12 @@ body {
 }
 
 h1 {
-    background-color: #355834;
+    background-color: var(--dark-green);
     width: 100%;
     font-size: 2rem;
     text-align: center;
     padding: 2rem 0rem;
-    color: white;
+    color: var(--white);
     position: relative;
     margin: 1rem 0rem;
 }
@@ -18,7 +24,7 @@ h1 {
 h1::after {
     content: '';
     width: 1px;
-    background-color: white;
+    background-color: var(--white);
     height: 7.2rem;
     position: absolute;
     left: calc(50% + 6rem);
@@ -30,10 +36,36 @@ h1::after {
 h1::before {
     content: '';
     width: 1px;
-    background-color: white;
+    background-color: var(--white);
     height: 7.2rem;
     position: absolute;
     left: calc(50% - 6rem);
     top: 0rem;
     transform: rotate(10deg);
+}
+
+/*
+hero section
+*/
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 4rem 0rem 2rem;
+}
+
+.hero__inner {
+    width: 20rem;
+    background-color: var(--light-green);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.banner__image {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 0.4rem;
+    border: 7px double var(--dark-green);
 }
