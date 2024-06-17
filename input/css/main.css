@@ -61,6 +61,14 @@ h2 {
     text-align: center;
 }
 
+.h2--left {
+    text-align: left;
+    width: 60rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: -1.5rem;
+}
+
 /*
 hero section
 */
