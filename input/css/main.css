@@ -55,6 +55,10 @@ h1::before {
     transform: rotate(10deg);
 }
 
+.footer_title::before, .footer_title::after {
+    transform: rotate(-10deg);
+}
+
 h2 {
     text-transform: uppercase;
     color: var(--dark-green);
