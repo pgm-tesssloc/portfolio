@@ -1,3 +1,60 @@
+/*
+fonts
+*/
+@font-face {
+    font-family:'Open Sans';
+    src: url('/fonts/Open Sans Regular.woff2') format('woff2'),
+		url('/fonts/Open Sans Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-02DC;
+}
+
+@font-face {
+    font-family:'Open Sans';
+    src: url('/fonts/Open Sans Medium.woff2') format('woff2'),
+		url('/fonts/Open Sans Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-02DC;
+}
+
+@font-face {
+    font-family:'Open Sans';
+    src: url('/fonts/Open Sans SemiBold.woff2') format('woff2'),
+		url('/fonts/Open Sans SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-02DC;
+}
+
+@font-face {
+    font-family:'Open Sans';
+    src: url('/fonts/Open Sans Bold.woff2') format('woff2'),
+		url('/fonts/Open Sans Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-02DC;
+}
+
+@font-face {
+    font-family:'Open Sans';
+    src: url('/fonts/Open Sans ExtraBold.woff2') format('woff2'),
+		url('/fonts/Open Sans ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-02DC;
+}
+
+/*
+general
+*/
+
 :root {
     --dark-green: #355834;
     --light-green: #aed4b0;
@@ -10,11 +67,30 @@ body {
     margin: 0 auto;
     font-size: 1rem;
     font-weight: 400;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     padding-bottom: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 main {
     padding: 0rem 1rem;
+    flex: 1;
+}
+
+a {
+    color: var(--dark-green);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+a:hover {
+    color: var(--light-green);
+    text-decoration: wavy;
 }
 
 /*
@@ -30,6 +106,7 @@ h1 {
     color: var(--white);
     position: relative;
     margin: 1rem 0rem;
+    font-weight: 500;
 }
 
 h1::after {
@@ -53,10 +130,6 @@ h1::before {
     left: calc(50% - 6rem);
     top: 0rem;
     transform: rotate(10deg);
-}
-
-.footer_title::before, .footer_title::after {
-    transform: rotate(-10deg);
 }
 
 h2 {
@@ -182,6 +255,46 @@ footer
     margin-top: 4rem;
 }
 
-.footer h1 {
+.footer__title {
+    background-color: var(--dark-green);
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem 0rem;
+    color: var(--white);
+    position: relative;
+    margin: 1rem 0rem;
     margin-bottom: 0rem;
+    font-weight: 500;
+}
+
+.footer__title::after {
+    content: '';
+    width: 1px;
+    background-color: var(--white);
+    height: 7.2rem;
+    position: absolute;
+    left: calc(50% + 6rem);
+    top: 0rem;
+    transform: rotate(-10deg);
+}
+
+
+.footer__title::before {
+    content: '';
+    width: 1px;
+    background-color: var(--white);
+    height: 7.2rem;
+    position: absolute;
+    left: calc(50% - 6rem);
+    top: 0rem;
+    transform: rotate(-10deg);
+}
+
+/*
+detail page
+*/
+.detail {
+    max-width: 50rem;
+    margin: 0 auto;
 }

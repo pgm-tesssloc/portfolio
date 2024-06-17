@@ -1,8 +1,11 @@
 {% extends "base.njk" %}
 
 {% block main %}
-    <h2>{{ project_title }}</h2>
-    {% block project %}
-        {{ content | safe}}
-    {% endblock project %}
+    <div class="detail">
+        <a href="/">Terug</a>
+        <h2>{{ project_title }}</h2>
+        {% block project %}
+            {{ content | safe}}
+        {% endblock project %}     
+    </div>
 {% endblock main %}
