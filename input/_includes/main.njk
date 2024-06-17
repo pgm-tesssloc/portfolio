@@ -4,13 +4,13 @@
 
 {% block content %}
     <section>
-        <p>
+        <p class="about">
         {% block about %}
             {{ content | safe}}
         {% endblock about %}
         </p>
     </section>
-    <section>
+    <section class="lists">
         {{c.linkList(contactTitle, contactIterator)}}
         {{c.list(techTitle, techIterator)}}
     </section>
