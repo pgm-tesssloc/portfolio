@@ -78,7 +78,7 @@ hero section
     justify-content: center;
     flex-direction: column;
     gap: 2rem;
-    margin: 4rem 0rem 2rem;
+    margin: 4rem 0rem 3rem;
 }
 
 @media (min-width: 40rem) {
@@ -113,7 +113,7 @@ about
     font-size: 1.2rem;
     max-width: 60rem;
     margin: 0 auto;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 /*
@@ -175,5 +175,9 @@ footer
     background-color: var(--dark-green);
     width: 100%;
     color: var(--white);
-    margin: 4rem 0rem 1rem;
+    margin-top: 4rem;
+}
+
+.footer h1 {
+    margin-bottom: 0rem;
 }
