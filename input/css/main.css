@@ -1,0 +1,39 @@
+body {
+    max-width: 80rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    background-color: #355834;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem 0rem;
+    color: white;
+    position: relative;
+    margin: 1rem 0rem;
+}
+
+h1::after {
+    content: '';
+    width: 1px;
+    background-color: white;
+    height: 7.2rem;
+    position: absolute;
+    left: calc(50% + 6rem);
+    top: 0rem;
+    transform: rotate(10deg);
+}
+
+
+h1::before {
+    content: '';
+    width: 1px;
+    background-color: white;
+    height: 7.2rem;
+    position: absolute;
+    left: calc(50% - 6rem);
+    top: 0rem;
+    transform: rotate(10deg);
+}
