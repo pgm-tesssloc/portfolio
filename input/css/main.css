@@ -72,7 +72,6 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    padding-bottom: 1rem;
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
 }
@@ -265,6 +264,7 @@ footer
     width: 100%;
     color: var(--white);
     margin-top: 4rem;
+    margin-bottom: 1rem;
 }
 
 .footer__title {
