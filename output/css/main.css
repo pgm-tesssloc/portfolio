@@ -58,6 +58,7 @@ general
 :root {
     --dark-green: #355834;
     --light-green: #aed4b0;
+    --secundary-green: #5aa775;
     --white: white;
 }
 
@@ -81,6 +82,9 @@ main {
     flex: 1;
 }
 
+/*
+links
+*/
 a {
     color: var(--dark-green);
     text-decoration: none;
@@ -89,8 +93,12 @@ a {
 }
 
 a:hover {
-    color: var(--light-green);
+    color: var(--secundary-green);
     text-decoration: wavy;
+}
+
+.list__link {
+    text-transform: capitalize;
 }
 
 /*
