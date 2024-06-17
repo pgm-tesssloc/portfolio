@@ -2,6 +2,8 @@
 project_title: jomi applicatie
 layout: project
 tags: projects
+link: jomi
+short_description: Een applicatie voor jomi vzw.
 ---
 
 Voor dit project werkte ik met drie medestudenten aan een applicatie voor Jomi vzw. We maakten een applicatie waarmee begeleiders makkelijker kunnen communiceren en observaties over werknemers kunnen bijhouden en delen.

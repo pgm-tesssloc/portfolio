@@ -2,6 +2,8 @@
 project_title: workshop
 layout: project
 tags: projects
+link: workshop
+short_description: Een workshop om te leren programmeren.
 ---
 
 Voor dit project werkte ik met twee medestudenten een workshop uit waarmee mensen zonder voorkennis kunnen leren programmeren. We maakten een memoryspel in het thema 'programmeren'.
