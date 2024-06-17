@@ -16,10 +16,10 @@
     </section>
     <section>
         {% for item in collections.projects %}
-            <article>
-                <h3>{{ item.data.project_title }}</h3>
-                <p>{{ item.data.short_description }}</p>
-                <a href="/projects/{{item.data.link}}">Lees meer</a>
+            <article class="project">
+                <h3 class="project__title">{{ item.data.project_title }}</h3>
+                <p class="project__description">{{ item.data.short_description }}</p>
+                <a class="project__link" href="/projects/{{item.data.link}}">Lees meer</a>
             </article>
         {% endfor %}
     </section>

@@ -56,7 +56,8 @@ h1::before {
 
 h2 {
     text-transform: uppercase;
-    color: var(--dark-green)
+    color: var(--dark-green);
+    text-align: center;
 }
 
 /*
@@ -134,12 +135,13 @@ lists
     margin-left: -2.5rem;
 }
 
-.list__item {
-
-}
-
 @media (min-width: 30rem) {
     .list__item {
         text-align: center;
     }
 }
+
+/*
+projects
+*/
+
