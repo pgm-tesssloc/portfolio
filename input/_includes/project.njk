@@ -1,3 +1,8 @@
 {% extends "base.njk" %}
 
-{% import "components/general.njk" as c %}
+{% block main %}
+    <h2>{{ project_title }}</h2>
+    {% block project %}
+        {{ content | safe}}
+    {% endblock project %}
+{% endblock main %}
