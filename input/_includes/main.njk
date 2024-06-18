@@ -4,11 +4,11 @@
 
 {% block content %}
     <section>
-        <p class="about">
-        {% block about %}
-            {{ content | safe}}
-        {% endblock about %}
-        </p>
+        <div class="about">
+            {% block about %}
+                {{ content | safe}}
+            {% endblock about %}
+        </div>
     </section>
     <section class="lists">
         {{c.linkList(contactTitle, contactIterator)}}
