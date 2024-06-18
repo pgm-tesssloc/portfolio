@@ -147,7 +147,13 @@ h1::before {
 h2 {
     text-transform: uppercase;
     color: var(--dark-green);
-    text-align: center;
+    text-align: left;
+}
+
+@media (min-width: 30rem) {
+    h2 {
+        text-align: center;
+    }
 }
 
 .h2--left {
@@ -247,7 +253,7 @@ projects
     border: 7px double var(--dark-green);
     display: flex;
     gap: 2rem;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     padding: 2rem;
     font-size: 1.2rem;
@@ -255,6 +261,17 @@ projects
     max-width: 60rem;
     margin: 0 auto;
     margin-top: 2rem;
+    flex-direction: column;
+    
+}
+
+@media (min-width: 30rem) {
+    .project {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 3rem;
+    }
 }
 
 /*
