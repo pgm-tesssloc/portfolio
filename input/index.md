@@ -4,6 +4,8 @@ title: Home
 banner_src: /hero.JPG
 banner_alt: Image of Tess Slock
 contactTitle: contact
+layout: main
+permalink: /
 contactIterator:
     -   name: "slocktess@yahoo.com"
     -   name: "0470267557"
@@ -21,11 +23,6 @@ techIterator:
     - name: "php"
 ---
 
-{% extends "main.njk" %}
-
-
-{% block about %}
 Ik kan goed communiceren door mijn achtergrond in taal- en letterkunde. Mijn ervaring als lid van verschillende organisaties en als student in het buitenland heeft me geleerd om goed samen te werken in team.
 
-Ik studeer af in 2025, heb interesse in front-end en full-stack functies en ik maak graag gebruiksvriendelijke, responsieve applicaties.
-{% endblock about %}
+Ik studeer af in 2025 en heb interesse in front-end en full-stack functies. Hierbij trekt variatie en de mogelijkheid om nieuwe dingen te leren me aan. Ook maak ik graag gebruiksvriendelijke, responsieve applicaties.
